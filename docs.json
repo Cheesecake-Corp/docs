@@ -35,7 +35,8 @@
   },
   "footer": {
     "socials": {
-      "website": "https://cheesecakecorp.org"
+      "website": "https://cheesecakecorp.org",
+      "github": "https://github.com/Cheesecake-Corp"
     }
   },
   "interaction": {
@@ -49,5 +50,9 @@
   },
   "fonts": {
     "family": "Google Sans"
+  },
+  "banner": {
+    "content": "OLD VERSION: https://cheesecakecorp.org/docs",
+    "dismissible": true
   }
 }
