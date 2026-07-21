@@ -40,5 +40,9 @@
   },
   "styling": {
     "latex": false
+  },
+  "favicon": {
+    "light": "/images/1000095792.svg",
+    "dark": "/images/17136953591679545292.svg"
   }
 }
