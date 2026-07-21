@@ -43,6 +43,10 @@
   },
   "favicon": {
     "light": "/images/1000095792.svg",
-    "dark": "/images/17136953591679545292.svg"
+    "dark": "/images/1000095791.svg"
+  },
+  "logo": {
+    "light": "/images/1000095792.svg",
+    "dark": "/images/1000095791.svg"
   }
 }
