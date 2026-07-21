@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Cheesecake Corp",
   "colors": {
-    "primary": "#D4A574",
-    "light": "#E8C39E",
-    "dark": "#8B5A2B"
+    "primary": "#297373",
+    "light": "#23CE6B",
+    "dark": "#02111B"
   },
   "navigation": {
     "groups": [
@@ -36,6 +36,16 @@
   "footer": {
     "socials": {
       "website": "https://cheesecakecorp.org"
+    }
+  },
+  "interaction": {
+    "drilldown": false
+  },
+  "background": {
+    "decoration": "gradient",
+    "color": {
+      "light": "#FFFBFA",
+      "dark": "#2E282A"
     }
   }
 }
