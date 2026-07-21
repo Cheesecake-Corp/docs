@@ -29,7 +29,8 @@
         "school/biologie/endo_zlazy/brzlik",
         "school/biologie/endo_zlazy/nadledvinky",
         "school/biologie/endo_zlazy/pankreas",
-        "school/biologie/endo_zlazy/pohlavni_zlazy"
+        "school/biologie/endo_zlazy/pohlavni_zlazy",
+        "school/biologie/endo_zlazy/sz_prb"
       ]
     },
     {
@@ -40,7 +41,9 @@
         "school/biologie/ns/micha",
         "school/biologie/ns/telencephalon",
         "school/biologie/ns/obvod_ns",
-        "school/biologie/ns/veget"
+        "school/biologie/ns/veget",
+        "school/biologie/ns/IPPAVLOV",
+        "school/biologie/ns/nemoc"
       ]
     },
     {
