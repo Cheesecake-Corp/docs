@@ -1,6 +1,9 @@
 {
   "tab": "Maturita",
   "groups": [
-    
+    {
+      "group": "Matematika",
+      "pages": ["school/grad/math/logika"]
+    }
   ]
 }
