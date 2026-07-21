@@ -42,10 +42,12 @@
     "drilldown": false
   },
   "background": {
-    "decoration": "windows",
     "color": {
       "light": "#FFFBFA",
       "dark": "#2E282A"
     }
+  },
+  "fonts": {
+    "family": "Google Sans"
   }
 }
