@@ -34,7 +34,10 @@
     "family": "Google Sans"
   },
   "banner": {
-    "content": "OLD VERSION: https://cheesecakecorp.org/docs",
+    "content": "OLD VERSION: https://cheesecakecorp.org/old/docs",
     "dismissible": true
+  },
+  "styling": {
+    "latex": false
   }
 }
