@@ -1,0 +1,69 @@
+{
+  "tab": "Biologie",
+  "groups": [
+    {
+      "group": "Vylučovací soustava",
+      "pages": [
+        "school/biologie/vylucovaci_soustava/intro",
+        "school/biologie/vylucovaci_soustava/ledviny",
+        "school/biologie/vylucovaci_soustava/mocovod",
+        "school/biologie/vylucovaci_soustava/mocovy_mechyr",
+        "school/biologie/vylucovaci_soustava/onemocneni_vs",
+        "school/biologie/vylucovaci_soustava/onemocneni_jater"
+      ]
+    },
+    {
+      "group": "Kůže",
+      "pages": [
+        "school/biologie/kuze/kuze",
+        "school/biologie/kuze/telesna_teplota"
+      ]
+    },
+    {
+      "group": "Endokrinní žlázy",
+      "pages": [
+        "school/biologie/endo_zlazy/intro",
+        "school/biologie/endo_zlazy/hypofyza",
+        "school/biologie/endo_zlazy/epifyza",
+        "school/biologie/endo_zlazy/sz",
+        "school/biologie/endo_zlazy/brzlik",
+        "school/biologie/endo_zlazy/nadledvinky",
+        "school/biologie/endo_zlazy/pankreas",
+        "school/biologie/endo_zlazy/pohlavni_zlazy"
+      ]
+    },
+    {
+      "group": "Nervová soustava",
+      "pages": [
+        "school/biologie/ns/intro",
+        "school/biologie/ns/neuron",
+        "school/biologie/ns/micha",
+        "school/biologie/ns/telencephalon",
+        "school/biologie/ns/obvod_ns",
+        "school/biologie/ns/veget"
+      ]
+    },
+    {
+      "group": "Smyslová soustava",
+      "pages": [
+        "school/biologie/ss/smyslova_ustroji",
+        "school/biologie/ss/zrak",
+        "school/biologie/ss/sluch"
+      ]
+    },
+    {
+      "group": "Rozmnožovací soustava",
+      "pages": [
+        "school/biologie/rs/basic",
+        "school/biologie/rs/m_po",
+        {
+          "group": "Ženské pohlavní orgány",
+          "pages": [
+            "school/biologie/rs/z_po",
+            "school/biologie/rs/om_cyklus"
+          ]
+        }
+      ]
+    }
+  ]
+}

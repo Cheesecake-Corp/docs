@@ -1,0 +1,62 @@
+{
+  "tab": "Fyzika",
+  "groups": [
+    {
+      "group": "Fyzika",
+      "pages": ["school/physics/physics"]
+    },
+    {
+      "group": "Magnetické pole",
+      "pages": [
+        {
+          "group": "Nestacionární",
+          "pages": [
+            "school/physics/magnetic_field/nonstationary/magnetic_induction",
+            "school/physics/magnetic_field/nonstationary/faraday",
+            "school/physics/magnetic_field/nonstationary/lenzs_law",
+            "school/physics/magnetic_field/nonstationary/own_induction",
+            "school/physics/magnetic_field/nonstationary/transient_response"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Střídavý proud",
+      "pages": [
+        "school/physics/ac/creation",
+        {
+          "group": "Obvody",
+          "pages": [
+            "school/physics/ac/circuits/circuit_basics",
+            "school/physics/ac/circuits/circuit_L_and_C",
+            "school/physics/ac/circuits/circuit_RLC",
+            "school/physics/ac/circuits/RLC_perf"
+          ]
+        },
+        "school/physics/ac/usmer_AC",
+        {
+          "group": "Střídavý proud v energetice",
+          "pages": [
+            "school/physics/ac/energetics/energy",
+            "school/physics/ac/energetics/ts_AC",
+            "school/physics/ac/energetics/tfs_AC",
+            "school/physics/ac/energetics/rozvod"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Elektromagnetické kmitání a vlnění",
+      "pages": [
+        "school/physics/em_/em_oscilator",
+        "school/physics/em_/em_wave",
+        "school/physics/em_/em_prop",
+        "school/physics/em_/radio_waves"
+      ]
+    },
+    {
+      "group": "Světlo",
+      "pages": ["school/physics/light/light"]
+    }
+  ]
+}
