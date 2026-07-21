@@ -1,0 +1,59 @@
+---
+title: "Quickstart"
+description: "Get started with Cheesecake Corp in minutes."
+---
+
+## Installation
+
+Install our SDK using your preferred package manager:
+
+<CodeGroup>
+
+```bash npm
+npm install @cheesecakecorp/sdk
+```
+
+```bash yarn
+yarn add @cheesecakecorp/sdk
+```
+
+```bash pnpm
+pnpm add @cheesecakecorp/sdk
+```
+
+</CodeGroup>
+
+## Configuration
+
+Initialize the client with your API key:
+
+```javascript
+import { CheesecakeClient } from '@cheesecakecorp/sdk';
+
+const client = new CheesecakeClient({
+  apiKey: process.env.CHEESECAKE_API_KEY,
+});
+```
+
+## Your first request
+
+```javascript
+const order = await client.orders.create({
+  flavor: 'new-york',
+  quantity: 1,
+});
+
+console.log(order);
+```
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Guides" icon="book" href="/guides/overview">
+    Learn core concepts.
+  </Card>
+
+  <Card title="API Reference" icon="code" href="/api-reference/introduction">
+    Explore all endpoints.
+  </Card>
+</CardGroup>

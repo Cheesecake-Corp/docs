@@ -1,16 +1,41 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
-  "name": "Cheesecakecorp Docs",
+  "theme": "mint",
+  "name": "Cheesecake Corp",
   "colors": {
-    "primary": "#ff0000"
+    "primary": "#D4A574",
+    "light": "#E8C39E",
+    "dark": "#8B5A2B"
   },
   "navigation": {
     "groups": [
       {
         "group": "Home",
-        "pages": ["index"]
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Guides",
+        "icon": "book",
+        "pages": [
+          "guides/overview",
+          "guides/authentication"
+        ]
+      },
+      {
+        "group": "API Reference",
+        "icon": "code",
+        "pages": [
+          "api-reference/introduction"
+        ]
       }
     ]
+  },
+  "footer": {
+    "socials": {
+      "website": "https://cheesecakecorp.org"
+    }
   }
 }

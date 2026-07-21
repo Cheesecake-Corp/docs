@@ -1,0 +1,21 @@
+---
+title: "Authentication"
+description: "How to authenticate requests to the Cheesecake Corp API."
+---
+
+All requests must include an API key in the `Authorization` header.
+
+```bash
+curl https://api.cheesecakecorp.org/v1/orders \
+  -H "Authorization: Bearer $CHEESECAKE_API_KEY"
+```
+
+<Warning>
+  Never commit your API key to source control. Use environment variables or a secrets manager.
+</Warning>
+
+## Getting an API key
+
+1. Sign in to the [dashboard](https://cheesecakecorp.org).
+2. Navigate to **Settings → API Keys**.
+3. Click **Create key**.
