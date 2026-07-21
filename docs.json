@@ -42,7 +42,7 @@
     "drilldown": false
   },
   "background": {
-    "decoration": "gradient",
+    "decoration": "windows",
     "color": {
       "light": "#FFFBFA",
       "dark": "#2E282A"
