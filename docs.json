@@ -12,7 +12,8 @@
       { "$ref": "./navigation/home.json" },
       { "$ref": "./navigation/cestina.json" },
       { "$ref": "./navigation/fyzika.json" },
-      { "$ref": "./navigation/biologie.json" }
+      { "$ref": "./navigation/biologie.json" },
+      { "$ref": "./navigation/maturita.json" },
     ]
   },
   "footer": {
