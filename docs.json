@@ -39,7 +39,7 @@
     "dismissible": true
   },
   "styling": {
-    "latex": false
+    "latex": true
   },
   "favicon": {
     "light": "/images/1000095791.svg",
