@@ -2,10 +2,6 @@
   "tab": "Fyzika",
   "groups": [
     {
-      "group": "Fyzika",
-      "pages": ["school/physics/physics"]
-    },
-    {
       "group": "Magnetické pole",
       "pages": [
         {

@@ -2,15 +2,17 @@
 title: "Elektromagnetický oscilátor"
 ---
 
-$u(t) = U_m \cdot \sin{\omega t + \varphi}$ $i(t) = I_m \cdot \sin{\omega t}$
+$$u(t) = U_m \cdot \sin{\omega t + \varphi}$$ $$i(t) = I_m \cdot \sin{\omega t}$$
 
 Jednoduchý oscilační obvod:
 
-![Jednoduchý oscilační obvod](./image.png)
+<Frame>
+  ![Jednoduchý oscilační obvod](./image.png)
 
-![V2](./image-3.png)
+  ![V2](./image-3.png)
+</Frame>
 
-$Q = C \cdot U$
+$$Q = C \cdot U$$
 
 - kondenzátor nabijeme
 
@@ -18,53 +20,53 @@ $Q = C \cdot U$
   <iframe src="https://www.desmos.com/calculator/xfu3tc8xz4" />
 </Frame>
 
-$\Delta \varphi = \frac{T}{4}$
+$$\Delta \varphi = \frac{T}{4}$$
 
-$R$ → 0: Dochází k periodické přeměně energie elektrického pole (kondenzátor) na energii mg. pole (cívka) a naopak - **ELEKTROMAGNETICKÝ OSCILÁTOR**
+$$R$$ → 0: Dochází k periodické přeměně energie elektrického pole (kondenzátor) na energii mg. pole (cívka) a naopak - **ELEKTROMAGNETICKÝ OSCILÁTOR**
 
 | Mech | El-mag |
 | --- | --- |
-| <span>$E_K$</span> | <span>$E_M$</span> |
-| <span>$E_p$</span> | <span>$E_e$</span> |
-| <span>okamžitá výchylka  $y$</span> | <span>náboj:  $q$</span> |
-| <span>síla:  $F$</span> | <span>napětí:  $u(t)$</span> |
-| <span>rychlost:  $v$</span> | <span>proud:  $i(t)$</span> |
-| <span>hmotnost:  $m$</span> | <span>indukčnost:  $L$</span> |
-| <span>tuhost:  $k = \frac{F}{y}$</span> | <span>převrácená kapacita:  $\frac{1}{C}=\frac{u}{q}$</span> |
+| <span>$$E_K$$</span> | <span>$$E_M$$</span> |
+| <span>$$E_p$$</span> | <span>$$E_e$$</span> |
+| <span>okamžitá výchylka      $$y$$</span> | <span>náboj:      $$q$$</span> |
+| <span>síla:      $$F$$</span> | <span>napětí:      $$u(t)$$</span> |
+| <span>rychlost:      $$v$$</span> | <span>proud:      $$i(t)$$</span> |
+| <span>hmotnost:      $$m$$</span> | <span>indukčnost:      $$L$$</span> |
+| <span>tuhost:      $$k = \frac{F}{y}$$</span> | <span>převrácená kapacita:      $$\frac{1}{C}=\frac{u}{q}$$</span> |
 
 ## Parametry oscilátoru
 
-- $R$ → 0 → volné kmitání
-- $u(t) = U_m \cdot \cos{\omega t}$
-- $i(t) = I_m \cdot \cos{(\omega t - \frac{\pi}{2})} = I_m \cdot \sin{\omega t}$
+- $$R$$ → 0 → volné kmitání
+- $$u(t) = U_m \cdot \cos{\omega t}$$
+- $$i(t) = I_m \cdot \cos{(\omega t - \frac{\pi}{2})} = I_m \cdot \sin{\omega t}$$
 
-::: details Odvození
+<Note>
+  $$X_C = \frac{1}{\omega \cdot C}$$ $$X_L = \omega \cdot L$$ $$U_C = U_L$$ $$ I \cdot X_C = I \cdot X_L$$ $$\omega_0 = \frac{1}{\sqrt{L \cdot C}}$$
 
-$X_C = \frac{1}{\omega \cdot C}$ $X_L = \omega \cdot L$ $U_C = U_L$ $ I \cdot X_C = I \cdot X_L$ $\omega_0 = \frac{1}{\sqrt{L \cdot C}}$
+  → vlastní kruhová frekvence kmitání
+</Note>
 
-→ vlastní kruhová frekvence kmitání
+<Card title="Thomsonův vztah pro vlastní periodu kmitání el. mag. oscilátoru" type="note">
+  $$T_0 = 2 \pi \sqrt{L \cdot C}$$
+</Card>
 
-:::
+- každé elektromagnetické kmitání je vždy tlumené, protože $$R$$ je nenulový \+ přeměny energie
 
-::: tip Thomsonův vztah pro vlastní periodu kmitání el. mag. oscilátoru
+$$R$$ → $$\infty$$ - přetlumeno - ke kmitání nedojde
 
-$T_0 = 2 \pi \sqrt{L \cdot C}$
+<Frame>
+  ![zapojení s generátorem](./image-4.png)
+</Frame>
 
-:::
-
-- každé elektromagnetické kmitání je vždy tlumené, protože $R$ je nenulový \+ přeměny energie
-
-$R$ → $\infty$ - přetlumeno - ke kmitání nedojde
-
-![zapojení s generátorem](./image-4.png)
-
-$u(t) = U_{mG} \cdot \sin{(\omega_G \cdot t)}$
+$$u(t) = U_{mG} \cdot \sin{(\omega_G \cdot t)}$$
 
 - v případě připojení generátoru oscilátor kmitá s frekvencí generátoru
   - nucené kmitání
 
-![GRAPHH](./image-6.png)
+<Frame>
+  ![GRAPHH](./image-6.png)
+</Frame>
 
-- $\omega _G \rightarrow \omega _0$ → stav rezonance LC-obvodu
+- $$\omega _G \rightarrow \omega _0$$ → stav rezonance LC-obvodu
 - malá energie generátoru způsobí velkou amplitudu výchylky
 - změnou kapacity kondenzátoru měníme frekvenci toho generátoru a tedy oscilačního obvodu

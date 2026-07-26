@@ -4,46 +4,66 @@ title: "Obvody AC s indukčností a kapacitou"
 
 ## Obvody s cívkou
 
-![obvod s civkou](/school/physics/ac/circuits/image-8.png)
+<Frame>
+  ![obvod s civkou](/school/physics/ac/circuits/image-8.png)
+</Frame>
 
-$i(t) = I_m \cdot \sin{\omega t}$ $u(t) = U_m \cdot \sin{(\omega t + \frac{\pi}{2})} = U_m \cdot \cos{\omega t}$
+$$i(t) = I_m \cdot \sin{\omega t}$$ $$u(t) = U_m \cdot \sin{(\omega t + \frac{\pi}{2})} = U_m \cdot \cos{\omega t}$$
 
-![graf civka](/school/physics/ac/circuits/image-7.jpg)
+<Frame>
+  ![graf civka](/school/physics/ac/circuits/image-7.jpg)
+</Frame>
 
-- Proud se zpožďuje v důsledku vlastní indukce cívky o $\frac{1}{4}T$
+- Proud se zpožďuje v důsledku vlastní indukce cívky o $$\frac{1}{4}T$$
 
-::: tip Induktance Zavedeme veličinu: $X_L = \frac{U}{I} = \frac{U_m}{I_m}$ odpovídající odporu
+<Card title="Induktance" type="note">
+  Zavedeme veličinu: $$X_L=\frac{U}{I}=\frac{U_m}{I_m}$$ odpovídající odporu $$[X_L]=Ω$$
+</Card>
 
-$[X_L] = \Omega$ :::
+- induktance $$\rightarrow$$ závisí na frekvenci $$f$$ a indukčnosti cívky $$L$$
 
-- induktance $\rightarrow$ závisí na frekvenci $f$ a indukčnosti cívky $L$
+$$X_L = \omega \cdot L = 2 \pi f \cdot L$$
 
-$X_L = \omega \cdot L = 2 \pi f \cdot L$
+<Note>
+  Resistance: $$R = X_R$$
+</Note>
 
-::: details Někdy se $R = X_R$ - resistance :::
+<Frame>
+  ![fázor cívky](/school/physics/ac/circuits/image-4.png)
+</Frame>
 
-![fázor cívky](/school/physics/ac/circuits/image-4.png)
-
-$\Delta \varphi = \frac{\pi}{2}$
+$$\Delta \varphi = \frac{\pi}{2}$$
 
 ## Obvody s kapacitorem
 
-![obvod s kapacitorem](/school/physics/ac/circuits/image-2.png)
+<Frame>
+  ![obvod s kapacitorem](/school/physics/ac/circuits/image-2.png)
+</Frame>
 
-$i(t) = I_m \cdot \sin{\omega t}$ $u(t) = U_m \cdot \sin{(\omega t - \frac{\pi}{2})} = -U_m \cdot \cos{\omega t}$
+$$i(t) = I_m \cdot \sin{\omega t}$$ $$u(t) = U_m \cdot \sin{(\omega t - \frac{\pi}{2})} = -U_m \cdot \cos{\omega t}$$
 
-![graf kapacitor](/school/physics/ac/circuits/image-3.png)
+<Frame>
+  ![graf kapacitor](/school/physics/ac/circuits/image-3.png)
+</Frame>
 
-- Napětí se zpožďuje za proudem o $\frac{1}{4}T$ (nabití desek a vytvoření el. pole kapacitoru)
+- Napětí se zpožďuje za proudem o $$\frac{1}{4}T$$ (nabití desek a vytvoření el. pole kapacitoru)
 
-::: tip Kapacitance Zavedeme veličinu: $X_C = \frac{U}{I} = \frac{U_m}{I_m}$ odpovídající odporu
+<Card title="Kapacitance" type="note">
+  Zavedeme veličinu: $$X_C = \frac{U}{I} = \frac{U_m}{I_m}$$ odpovídající odporu
 
-$[X_C] = \Omega$ $X_C = \frac{1}{\omega \cdot C} = \frac{1}{2 \pi f \cdot C}$ :::
+  $$[X_C] = \Omega$$
 
-![fázor kapacitoru](/school/physics/ac/circuits/image-5.png)
+  $$X_C = \frac{1}{\omega \cdot C} = \frac{1}{2 \pi f \cdot C}$$
+</Card>
 
-$\Delta \varphi = -\frac{\pi}{2}$
+<Frame>
+  ![fázor kapacitoru](/school/physics/ac/circuits/image-5.png)
+</Frame>
+
+$$\Delta \varphi = -\frac{\pi}{2}$$
 
 ## Obrázek celkového fázoru
 
-![fazor celkem](/school/physics/ac/circuits/image-6.png)
+<Frame>
+  ![fazor celkem](/school/physics/ac/circuits/image-6.png)
+</Frame>
