@@ -1,9 +1,17 @@
 {
   "tab": "Maturita",
-  "groups": [
+  "dropdowns": [
     {
-      "group": "Matematika",
-      "pages": ["school/grad/math/logika"]
+      "dropdown": "Matematika",
+      "pages": [
+        "school/grad/math/logika"
+      ]
+    },
+    {
+      "dropdown": "Čeština",
+      "pages": [
+        "school/grad/czech/lakomec"
+      ]
     }
   ]
 }
