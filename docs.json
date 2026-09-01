@@ -13,7 +13,15 @@
       { "$ref": "./navigation/cestina.json" },
       { "$ref": "./navigation/fyzika.json" },
       { "$ref": "./navigation/biologie.json" },
-      { "$ref": "./navigation/maturita.json" }
+      {
+        "$ref": "./navigation/maturita.json"
+      },
+      {
+        "tab": "SF_T",
+        "pages": [
+          "school/physics-hosnedl/stranka"
+        ]
+      }
     ]
   },
   "footer": {
