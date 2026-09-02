@@ -1,14 +1,39 @@
 @media print {
-  /* Skryje navigaci, vyhledávání, postranní panely a patičku */
-  header, footer, nav, aside, .sidebar, .header-class, .footer-class {
+  /* Skryje navigační lišty, boční panely, zápatí a reklamy */
+  nav, sidebar, footer, .ads, .no-print {
     display: none !important;
   }
-  
+
+  /* Nastaví bílé pozadí a černý text pro maximální čitelnost a úsporu toneru */
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
   /* Roztáhne hlavní obsah na celou šířku stránky */
-  main, article, .content-class {
+  main, .content {
     width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Vypíše URL adresy odkazů textově vedle nich */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #555;
+  }
+
+  /* Zabrání zalomení nadpisu na konci stránky */
+  h1, h2, h3 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Zabrání rozdělení obrázků nebo tabulek přes dvě stránky */
+  img, table, blockquote {
+    page-break-inside: avoid;
   }
 }
