@@ -1,6 +1,6 @@
 @media print {
   /* Skryje navigační lišty, boční panely, zápatí a reklamy */
-  nav, sidebar, footer, .ads, .no-print {
+  nav, sidebar, footer, .ads, .no-print, header, .my-8 {
     display: none !important;
   }
 
