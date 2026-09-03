@@ -71,7 +71,12 @@
             }
           ]
         }
-      ]
+      ],
+      "icon": "person",
+      "color": {
+        "light": "#ffaaaa",
+        "dark": "#ffaaaa"
+      }
     }
   ]
 }
