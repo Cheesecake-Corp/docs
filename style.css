@@ -3,6 +3,9 @@
   nav, sidebar, footer, .ads, .no-print, #navbar, .my-8, .feedback-toolbar {
     display: none !important;
   }
+  .pt-\[calc\(10rem\+var\(--banner-height\,2\.5rem\)\)\] {
+    padding-top: 0;
+  }
 
   /* Nastaví bílé pozadí a černý text pro maximální čitelnost a úsporu toneru */
   body {
