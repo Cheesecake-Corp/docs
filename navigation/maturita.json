@@ -5,42 +5,52 @@
       "dropdown": "Matematika",
       "pages": [
         "school/grad/math/logika",
-        "untitled-page",
-        "untitled-page-2",
-        "untitled-page-3",
-        "untitled-page-4",
-        "untitled-page-5",
-        "untitled-page-6",
-        "untitled-page-7",
-        "untitled-page-8",
-        "untitled-page-9",
-        "untitled-page-10",
-        "untitled-page-11",
-        "untitled-page-12",
-        "untitled-page-13",
-        "untitled-page-14",
-        "untitled-page-15",
-        "untitled-page-16",
-        "untitled-page-17",
-        "untitled-page-18",
-        "untitled-page-19",
-        "untitled-page-20",
-        "untitled-page-21",
-        "untitled-page-22",
-        "untitled-page-23",
-        "untitled-page-24",
-        "untitled-page-25",
-        "untitled-page-26",
-        "untitled-page-27",
-        "untitled-page-28",
-        "untitled-page-29"
-      ]
+        "school/grad/math/untitled-page",
+        "school/grad/math/untitled-page-2",
+        "school/grad/math/untitled-page-3",
+        "school/grad/math/untitled-page-4",
+        "school/grad/math/untitled-page-5",
+        "school/grad/math/untitled-page-6",
+        "school/grad/math/untitled-page-7",
+        "school/grad/math/untitled-page-8",
+        "school/grad/math/untitled-page-9",
+        "school/grad/math/untitled-page-10",
+        "school/grad/math/untitled-page-11",
+        "school/grad/math/untitled-page-12",
+        "school/grad/math/untitled-page-13",
+        "school/grad/math/untitled-page-14",
+        "school/grad/math/untitled-page-15",
+        "school/grad/math/untitled-page-16",
+        "school/grad/math/untitled-page-17",
+        "school/grad/math/untitled-page-18",
+        "school/grad/math/untitled-page-19",
+        "school/grad/math/untitled-page-20",
+        "school/grad/math/untitled-page-21",
+        "school/grad/math/untitled-page-22",
+        "school/grad/math/untitled-page-23",
+        "school/grad/math/untitled-page-24",
+        "school/grad/math/untitled-page-25",
+        "school/grad/math/untitled-page-26",
+        "school/grad/math/untitled-page-27",
+        "school/grad/math/untitled-page-28",
+        "school/grad/math/untitled-page-29"
+      ],
+      "icon": "pi",
+      "color": {
+        "light": "#aaffaa",
+        "dark": "#aaffaa"
+      }
     },
     {
       "dropdown": "Čeština",
       "pages": [
         "school/grad/czech/lakomec"
-      ]
+      ],
+      "icon": "book",
+      "color": {
+        "light": "#aabbff",
+        "dark": "#aabbff"
+      }
     }
   ]
 }

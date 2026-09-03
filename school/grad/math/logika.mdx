@@ -4,12 +4,87 @@ title: "1. Základy matematické logiky, matematická věta, základní druhy d�
 
 # Výrok
 
-Definice: Výrok je jakékoliv tvrzení, u kterého lze určit, zda je pravdivé či ne. 
+**Definice: Výrok je jakékoliv tvrzení, u kterého lze určit, zda je pravdivé či ne.** 
 
-## Pravdivostní hodnota
+<u>Pravdivostní hodnota</u>: Říká, zda je výrok pravdivý či nepravdivý.
 
-Neboli pravdivostní ohodnocení, říká, zda je výrok pravdivý či nepravdivý.
+<u>Negace výroku</u>: Takový výrok, který má vždy opačnou pravdivostní hodnotu, než výrok původní, tedy popírá pravdivostní hodnotu původního výroku.
 
-- "Karel IV. byl český král." - jedná se o pravdivý výrok, pravdivostní hodnota 1
-- "Antonín Dvořák stále žije." - jedná se o nepravdivý výrok, pravdivostní hodnota 0
-- "Dělej!" - nejedná se o výrok
+Výroky se značí velkými písmeny, např. $$A$$.
+
+Pravdivostní hodnota výroků se značí $$v(A) = 1$$ (moc se nepoužívá, ale je to na portálu matematiky MFF UK).
+
+Negace výroků se značí $$\neg A$$.
+
+# Složený výrok
+
+**Definice: Výrok, který vznikl spojením jiných výroků pomocí logických spojek.**
+
+<u>Konjunkce</u>: Spojka "a", $$A \wedge B, \neg (A \wedge B) = \neg A \vee \neg B$$
+
+<u>Disjunkce</u>: Spojka "nebo" $$A \vee B, \neg (A \vee B) = \neg A \wedge \neg B$$
+
+<u>Implikace</u>: "Když tohle, tak tamto." $$A \Rightarrow B, \neg (A \Rightarrow B) = A \wedge \neg B$$
+
+<u>Ekvivalence</u>: "Tohle, právě tehdy když tamto." $$A \Leftrightarrow B, \neg (A \Leftrightarrow B) = A \Leftrightarrow \neg B$$
+
+<u>Tabulka pravdivostních hodnot</u>:
+
+| $$A$$ | $$B$$ | $$A \wedge B$$ | $$A \vee B$$ | $$A \Rightarrow B$$ | $$A \Leftrightarrow B$$ |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 1 | 0 |
+| 0 | 0 | 0 | 0 | 1 | 1 |
+
+# Složitější výroky
+
+Pravdivostní hodnotu určíme postupně, rozdělením výroku na dílčí výroky.
+
+$$A,B$$ nejsou de facto výroky, ale výrokové proměnné, výroky jsou tvrzení, která se za nimi skrývají.
+
+<u>Tautologie</u>: Složený výrok, který je vždy pravdivý.
+
+<u>Kontradikce</u>: Složený výrok, který je vždy nepravdivý.
+
+<u>Obrácená implikace</u>: Máme $$A \Rightarrow B$$, obrácená implikace je $$B \Rightarrow A$$.
+
+<u>Obměněná implikace</u>: Máme $$A \Rightarrow B$$, obměna je $$\neg B \Rightarrow \neg A$$, což má stejnou pravdivostní hodnotu, jako původní implikace.
+
+# Kvantifikátory
+
+**Definice: Matematický kvantifikátor je symbol nebo výraz, který určuje, pro kolik prvků dané tvrzení platí. Upravují tvrzení typu** $$x < 5$$ **na výrok.**
+
+<u>Obecný kvantifikátor</u>: $$\forall$$, čteme "pro každé", označuje, že výrok platí pro libovolnou hodnotu za tímto kvantifikátorem.
+
+<u>Existenční kvantifikátor</u>: $$\exists$$, čteme "existuje (alespoň jedno)", označuje, že výrok platí pro alespoň jednu hodnotu za tímto kvantifikátorem.
+
+# Matematická věta, axiom, definice
+
+**Definice m. axiomu: Tvrzení, u kterého je předem známo, že je pravdivé a není třeba ho dokazovat.**
+
+**Definice m. věty: Tvrzení, které není axiom (musí se dokazovat) a slouží k popisu poznatků.**
+
+**Definice definice: Přesné a jednoznačné vymezení určitého pojmu.**
+
+# Důkazy
+
+**Definice: Postup, kterým dokazujeme matematické věty.**
+
+<u>Nutná a postačující podmínka</u>: Uvažujme implikaci $$A \Rightarrow B$$, pak je $$B$$ nutná podmínka a $$A$$ postačující podmínka. Nutná podmínka musí platit, postačující podmínka dokazuje.
+
+<u>Přímý důkaz</u>: Vyjdeme z ověřených faktů (vět a axiomů) a přímo se dostaneme k nové větě.
+
+<u>Nepřímé důkazy</u>:
+
+- Důkaz obměněnou implikací: Jelikož obměna má stejnou pravdivostní hodnotu, jako původní implikace, pokud dokážeme obměnu, dokázali jsme i původní implikaci.
+- Důkaz sporem: Předpokládáme negaci výroku, který chceme dokázat, než dojdeme ke sporu, to dokáže, že negace nemůže platit, tedy platí původní výrok.
+
+<u>Důkaz matematickou indukcí</u>: "Do trolejbusu se vejde nekonečně mnoho lidí." - pí Soukupová
+
+- Používá se pro věty týkajících se přirozených čísel.
+
+1. Dokážeme, že výrok platí pro nějaký base case $$n_0$$.
+2. Předpokládáme, že existuje $$n$$, pro který tento výrok platí.
+3. Dokážeme, že pokud výrok platí pro $$n$$, bude platit i pro $$n+1$$.
+4. Z toho můžeme vyvodit, že výrok platí pro všechna $$\mathbb{N} \geq n_0$$.
