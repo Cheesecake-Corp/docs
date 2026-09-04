@@ -52,7 +52,10 @@
     },
     {
       "group": "Světlo",
-      "pages": ["school/physics/light/light"]
+      "pages": [
+        "school/physics/light/light",
+        "school/physics/light/optical_enviromment"
+      ]
     }
   ]
 }
