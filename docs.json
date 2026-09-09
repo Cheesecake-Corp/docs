@@ -19,7 +19,9 @@
       {
         "tab": "SF_T",
         "pages": [
-          "school/physics-hosnedl/stranka"
+          "school/physics-hosnedl/stranka",
+          "school/physics-hosnedl/vedeckateorie",
+          "school/physics-hosnedl/teorierelativity"
         ]
       }
     ]
