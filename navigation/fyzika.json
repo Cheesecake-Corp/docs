@@ -56,14 +56,15 @@
       ]
     },
     {
-      "dropdown": "Untitled Dropdown",
+      "dropdown": "Světlo",
       "groups": [
         {
           "group": "Světlo",
           "pages": [
             "school/physics/light/light",
             "school/physics/light/optical_enviromment",
-            "school/physics/light/zakon-odrazu-a-zakon-lomu"
+            "school/physics/light/zakon-odrazu-a-zakon-lomu",
+            "school/physics/light/uplny-odraz"
           ]
         }
       ]
