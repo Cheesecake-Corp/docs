@@ -79,6 +79,12 @@
         "light": "#ffaaaa",
         "dark": "#ffaaaa"
       }
+    },
+    {
+      "dropdown": "Dějiny biologie",
+      "pages": [
+        "school/biologie/history/dejiny"
+      ]
     }
   ]
 }
