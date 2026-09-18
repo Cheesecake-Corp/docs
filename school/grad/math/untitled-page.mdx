@@ -10,23 +10,128 @@ Množiny se značí velkými písmeny (např. $$A$$), jejich prvky malými ($$a$
 
 <u>Zápis množiny výčtem prvků</u>: $$A = \{a,b,c\}$$
 
+Prázdná množina: $$\{\} = \varnothing$$, bezprvková množina
+
 Chceme-li zapsat, že prvek je v množině, použijeme symbol $$\in$$ (náleží). V opačném případě použijeme symbol $$\notin$$ (nenáleží).
 
-<u>Speciální množiny</u>: 
-
-- $$\mathbb{N}$$ - přirozená čísla $$\{1,2,3,4,...\}$$
-- $$\mathbb{Z}$$ - celá čísla $$\{...,-2,-1,0,1,2,...\}$$
-- $$\mathbb{Q}$$ - racionální čísla $$\{x = \frac{p}{q}; p \in \mathbb{Z} \land q \in \mathbb{N} \land \text{gcd}(p,q) = 1\}$$
-- $$\mathbb{R}$$ - reálná čísla - racionální čísla a iracionální čísla
-- atd.
+<Card title="Speciální množiny" icon="input-numeric">
+  - $$\mathbb{N}$$ - přirozená čísla $$\{1,2,3,4,...\}$$
+  - $$\mathbb{Z}$$ - celá čísla $$\{...,-2,-1,0,1,2,...\}$$
+  - $$\mathbb{Q}$$ - racionální čísla $$\{x = \frac{p}{q}; p \in \mathbb{Z} \land q \in \mathbb{N} \land \text{gcd}(p,q) = 1\}$$
+  - $$\mathbb{R}$$ - reálná čísla - racionální čísla a iracionální čísla
+  - atd.
+</Card>
 
 <u>Zápis množiny pomocí vlastnosti</u>: $$A = \{x\in \mathbb{R}; x > 5\}$$
 
 Pokud platí, že $$\forall x \in A \mathit{:x} \in B$$, pak říkáme, že $$A$$ je podmnožinou $$B$$. Značíme $$A \subseteq B$$. Tomuto vztahu se říká inkluze.
 
-<u>Množinové operace</u>:
+Pokud platí, že $$A \subseteq B \land B \subseteq A$$, pak říkáme, že množiny se rovnají, značíme $$A = B$$.
+
+## Množinové operace
 
 - Doplněk: Mějme dvě množiny $$A,B$$, kde $$B \subseteq A$$. Doplněk $$B$$ na $$A$$$$B'_A = \{x; x \in A \land x \notin B\}$$. Pokud je zřejmé, na jakou množinu doplněk je, stačí psát $$B'$$.
 - Rozdíl: Mějme dvě množiny $$A,B$$. $$A \setminus B = \{x; x \in A \land x \notin B\}$$.
 - Průnik: Mějme dvě množiny $$A,B$$. $$A \cap B = \{x; x \in A \land x \in B\}$$.
-- Sjednocení: Mějme dvě množiny $$A,B$$. $$A \cup B = \{x; x \in A \lor x \in B\}$$.<br />
+- Sjednocení: Mějme dvě množiny $$A,B$$. $$A \cup B = \{x; x \in A \lor x \in B\}$$.
+
+<u>Vennovy diagramy</u>: Grafické schematické znázornění několika množin a jejich vzájemných vztahů.
+
+## Intervaly
+
+**Definice: Množina reálných čísel ležících mezi dvěma čísly (těm se říká meze intervalu).**
+
+![Image](/images/image-8.png "Image")
+
+- Obsahuje-li interval meze, říká se mu uzavřený interval, neobsahuje-li meze, říká se mu otevřený interval. Obsahuje-li jen jednu z mezí, říká se mu polootevřený interval.
+
+# Užití množin při řešení nerovnic
+
+## Lineární nerovnice
+
+$$
+2x+3 > 7 \\ 2x > 4 \\ x > 2
+$$
+
+Množina řešení: 
+
+$$
+K = (2,\infty)
+$$
+
+## Průnik podmínek více nerovnic
+
+$$
+A \mathit{:x} > 2 \\ B \mathit{:x} \leq 5
+$$
+
+$$
+K_A = (2, \infty) \\ K_B = (-\infty, 5 \rangle
+$$
+
+Aby nějaké $$x$$ řešilo obě rovnice, musí splňovat zároveň obě podmínky, tedy množina řešení:
+
+$$
+K = K_A \cap K_B = (2, 5 \rangle
+$$
+
+## Sjednocení podmínek více nerovnic
+
+$$
+x < -2 \lor x \geq 3 \\ K = (-\infty, -2) \cup \langle 3, \infty)
+$$
+
+Funguje obdobně jako u průniku.
+
+## Nerovnice s absolutní hodnotou
+
+$$
+|x| < 3
+$$
+
+Tyto rovnice musíme rozdělit na intervaly podle nulového bodu absolutní hodnoty a poté pracovat pouze v nich.
+
+Nulový bod je v $$x = 0$$, tedy budeme pracovat v intervalech $$(-\infty, 0)$$ a $$\langle 0, \infty)$$
+
+$$
+x \in \langle0, \infty) \Rightarrow x \geq 0 \\ x < 3 \\ x \in \langle0,3)
+$$
+
+$$
+x \in (-\infty, 0) \Rightarrow x < 0 \\ -x > -3 \\ x \in (-3,0)
+$$
+
+$$
+K = A \cup B = (-3,3)
+$$
+
+## Kvadratické nerovnice
+
+$$
+x^2 - 5x + 6 > 0
+$$
+
+1. Je kvadratická funkce otevřená dolů či nahoru (podle koeficientu $$a$$)?
+2. Kde má funkce kořeny, zda nějaké má?
+
+Na základě těchto informací jsme schopni určit, kde je fce větší než 0.
+
+$$a > 0 \Rightarrow$$fce je otevřená nahoru
+
+$$
+(x-3)(x-2) > 0
+$$
+
+Rozdělíme na intervaly podle kořenů (kořeny samotné brát nemusíme, ty jsou rovny $$0$$, což není větší než $$0$$.
+
+$$
+1. \, x \in (-\infty,2)\\ 2. \, x \in (2,3)\\ 3. \, x \in (3, \infty)
+$$
+
+$$
+1. \, -\cdot \, - = + \Rightarrow f(x) > 0 \\ 2. \, - \cdot \, + = - \Rightarrow f(x) < 0 \\ 3. \, + \cdot \, + = + \Rightarrow f(x) > 0
+$$
+
+$$
+K = (-\infty,2) \cup (3, \infty)
+$$
