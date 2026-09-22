@@ -10,6 +10,10 @@ Lze rozšířit na libovolný počet množin.
 
 Konkrétní příklad $$\mathbb{R} \times \mathbb{R} = \mathbb{R}^2$$ popisuje rovinu (množina všech bodů v rovině), kartézský souřadnicový systém.
 
+# Relace
+
+**Definice: Relace je podmnožina kartézského součinu.**
+
 # Binární relace
 
 **Definice: Binární relace** $$R \subseteq X \times Y$$**, která obvykle určuje nějakou vlastnost.**
@@ -49,8 +53,17 @@ Můžeme zkoumat určité vlastnosti:
 
 <u>Bijekce</u>: Zároveň injektivní a zároveň surjektivní.
 
-<u>Inverzní zobrazení prostému zobrazení</u>: 
+<u>Inverzní zobrazení prostému zobrazení</u>: Mějme prosté zobrazení $$f: X \rightarrow Y$$, inverzní zobrazení k tomuto zobrazení je $$f^{-1} = \{(y,x) \in Y \times X: (x;y) \in f\}$$
 
 # Geometrické zobrazení
 
-**Definice: Geometrické zobrazení** $$Z : A \rightarrow A'$$ **přiřazuje každému bodu v rovině/prostoru právě jeden jiný bod v rovině/prostoru.**
+**Definice: Geometrické zobrazení** $$Z : A \rightarrow A'$$ **přiřadí každému bodu** $$A$$ **právě jeden bod** $$A'$$**.**
+
+Body, které se zobrazí samy na sebe jsou tzv. samodružné body.
+
+Některá geometrická zobrazení:
+
+- Translace (posunutí) o vektor posunutí $$\vec{u}$$: $$A' = A + \vec{u}$$
+- Rotace (otočení) okolo středu souměrnosti $$S$$ o úhel $$\varphi$$: $$\vert SA \vert = \vert SA' \vert \land \vert \angle ASA' \vert = \varphi$$
+- Osová souměrnost podle osy souměrnosti $$o$$: $$\vert Ao \vert = \vert A'o \vert \land (A' \in p; p \perp o \land A \in p) \land A \neq A' $$
+- Středová souměrnost podle středu souměrnosti $$S$$: $$\vert SA \vert = \vert SA' \vert \land A' \in \overrightarrow{AS} \land A \neq A'$$
