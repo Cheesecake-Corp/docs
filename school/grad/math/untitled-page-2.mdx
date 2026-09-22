@@ -1,3 +1,46 @@
 ---
 title: "3. Kartézský součin, binární relace, zobrazení, geometrické zobrazení, funkce, vlastnosti funkce"
 ---
+
+# Kartézský součin
+
+**Definice: Kartézský součin dvou množin** $$A,B$$ **je** $$A \times B = \{(a,b) \mathit{:a} \in A \land b \in B\}$$
+
+Lze rozšířit na libovolný počet množin.
+
+Konkrétní příklad $$\mathbb{R} \times \mathbb{R} = \mathbb{R}^2$$ popisuje rovinu (množina všech bodů v rovině), kartézský souřadnicový systém.
+
+# Binární relace
+
+**Definice: Binární relace** $$R \subseteq X \times Y$$**, která obvykle určuje nějakou vlastnost.**
+
+<u>Zápis</u>: $$[x,y] \in R$$ nebo $$xRy$$
+
+Pokud se jedná o relaci $$R \subseteq A\times A$$, je to relace na množině $$A$$.
+
+Můžeme zkoumat určité vlastnosti:
+
+- Reflexivita: $$aRa$$
+- Antireflexivita: $$\neg(aRa)$$
+- Symetrie: $$aRb \Rightarrow bRa$$
+- Slabá antisymetrie: $$aRb \land bRa \Rightarrow a = b$$
+- Silná antisymetrie: $$aRb \Rightarrow \neg(bRa)$$
+- Tranzitivita: $$aRb \land bRc \Rightarrow aRc$$
+
+# Zobrazení
+
+**Definice: Zobrazení** $$f$$ **je speciální případ binární relace, kde má každý vzor nejvýše jeden obraz.**
+
+<u>Vzor</u>: Prvek z množiny $$X$$, psán jako $$x$$
+
+<u>Obraz</u>: Prvek z množiny $$Y$$, psán jako $$f(x)$$
+
+<u>Zápis</u>: $$f \mathit{: X} \rightarrow Y$$ přiřazuje každému prvku z množiny $$X$$ (vzoru) nejvýše jeden prvek z množiny $$Y$$ (obraz).
+
+<u>Definiční obor</u>: $$D(f)$$ - množina $$X$$
+
+<u>Obor hodnot</u>: $$H(f)$$ - množina $$Y$$
+
+## Druhy zobrazení
+
+<u>Prosté (injektivní)</u>: $$\forall x,y \in D(f) \land x \neq y: f(x) \neq f(y)$$
