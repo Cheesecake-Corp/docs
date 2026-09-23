@@ -56,7 +56,7 @@ $$
 
 Obecný tvar: $$ax^2 + bx + c = 0$$
 
-Řešení přes úpravu na čtverec:
+## Řešení přes úpravu na čtverec:
 
 $$
 ax^2 + bx + c = 0 \\ x^2 + \frac{b}{a}x + \frac{c}{a} = 0 \\ (x + \frac{b}{2a})^2 - \frac{b^2 - 4ac}{4a^2} = 0 \\ x + \frac{b}{2a} = \pm \sqrt{\frac{b^2 - 4ac}{4a^2}}
@@ -69,5 +69,55 @@ $$
 - Tomuto vzorci se říká "kvadratický vzorec" a je to taková ta bruteforce cesta k výsledku.
 - Jeho části $$b^2 - 4ac$$ se říká diskriminant, značíme $$D = b^2 - 4ac$$.
   - $$D < 0 \Rightarrow K = \varnothing$$ - $$0$$ řešení
-  - $$D = 0 \Rightarrow K = \{-\frac{b}{2a}\}$$ - $$1$$ řešení
+  - $$D = 0 \Rightarrow K = \{-\frac{b}{2a}\}$$ - $$1$$ řešení, tzv. dvojnásobný kořen, $$x_1 = x_2$$
   - $$D > 0 \Rightarrow K = \{x_1; x_2\}$$ - $$2$$ řešení
+
+## Řešení přes Viètovy vzorce:
+
+$$
+x_1 + x_2 = \frac{-b + \sqrt{D}}{2a} + \frac{-b - \sqrt{D}}{2a} = -\frac{b}{a}
+$$
+
+$$
+x_1 \cdot x_2 = \frac{-b + \sqrt{b^2 - 4ac}}{2a} \cdot \frac{-b - \sqrt{b^2 - 4ac}}{2a} = \frac{c}{a}
+$$
+
+V některých případech se dají takto jednoduše tipnout kořeny:
+
+$$
+x^2 + 5x + 6 = 0 \\ x_1 + x_2 = -\frac{b}{a} = -5 \\ x_1 \cdot x_2 = \frac{c}{a} = 6
+$$
+
+$$
+x_1 = -2, x_2 = -3
+$$
+
+Z Viètových vzorců vyplývá: 
+
+$$
+(x-x_1)(x-x_2) = 0 \\ x^2 - x(x_1+x_2) + x_1 \cdot x_2 = 0 \\ x^2 - x \cdot (-\frac{b}{a}) + \frac{c}{a} = 0 \\ ax^2 + bx + c = 0
+$$
+
+- Tedy tento zápis kvadratické rovnice je ekvivalentní tomu obecnému.
+
+# Polynomické rovnice vyšších stupňů
+
+Obecný tvar: $$P(x) = 0$$
+
+Až do čtvrtého stupně existují vzorce na jednoduché vyřešení.
+
+<Card title="Základní věta algebry" icon="sparkles">
+  Každý polynom stupně $$1$$ nebo víc lze rozložit na součin polynomů, z nichž každý má stupeň $$1$$nebo $$2$$.
+</Card>
+
+$$\Rightarrow$$ Pokud dokážeme tipnout kořen, můžeme polynom na levé straně vydělit polynomem $$(x - x_0)$$ a snížit tím stupeň o $$1$$.
+
+Pokud polynom na levé straně dodržuje koeficienty binomické věty, můžeme rozložit na $$(x-x_0)^n$$.
+
+Jinak good luck
+
+# Rovnice s absolutní hodnotou
+
+doplním
+
+# Iracionální rovnice
