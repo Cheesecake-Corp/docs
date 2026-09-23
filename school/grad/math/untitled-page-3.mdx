@@ -1,3 +1,73 @@
 ---
 title: "4. Rovnice a jejich řešení v oboru reálných čísel"
 ---
+
+# Rovnice
+
+**Definice: Rovnice je rovnost dvou výrazů, která obsahuje jednu nebo více proměnných.**
+
+$$
+f(x) = g(x)
+$$
+
+- $$f(x)$$ se nazývá levá strana rovnice, $$g(x)$$ se nazývá pravá strana rovnice
+
+## Kořen rovnice
+
+**Definice: Kořen rovnice, též řešení rovnice, je hodnota proměnné (sada hodnot proměnných), pro které je rovnost splněna. Množinu všech kořenů/řešení rovnice značíme** $$K$$**.**
+
+## Obor řešení
+
+Pro každou rovnici hledáme řešení v určítém číselném oboru, např. $$\mathbb{N, Z}$$ - těm se říká diofantické rovnice, $$\mathbb{Q}$$, nebo $$\mathbb{R}$$, kterým se budeme dál zabývat.
+
+## Ekvivalentní úpravy
+
+Při řešení rovnic používáme ekvivalentní úpravy, to jsou ty, které nezmění množinu kořenů. Tím dostaneme jinou rovnici se stejnou množinou kořenů. Pokud změní, musíme to nějak zohlednit.
+
+- Přičtení nebo odečtení stejného čísla $$a$$ z obou stran rovnice.
+- Vynásobení obou stran rovnice nějakým číslem $$a \in \mathbb{R}; a \neq 0$$.
+- Upravovat algebraické výrazy. $$x^2 + 2x + 1 = 0 \Rightarrow (x+1)^2 = 0$$
+- Dělit neznámou ve výrazu **POZOR**, musíme nejprve zohlednit nulovou hodnotu toho, co dělíme: $$x(x+1) = 0 \Rightarrow x+1 = 0$$ bychom přišli o řešení $$x = 0$$, tedy ho musíme nejdříve zohlednit.
+- Atd.
+
+# Lineární rovnice s jednou neznámou
+
+Obecný tvar: $$ax+b = 0$$
+
+- Pokud máme komplikovanější tvar, který je ovšem stále lineární, převedeme na tento případ. Toto platí i u komplikovanějších rovnic, nebudu to již zmiňovat.
+
+Počet kořenů:  
+
+- Pokud $$a = 0 \land b = 0$$, má rovnice nekonečně mnoho řešení (vyjde $$0 = 0 \Rightarrow K = \mathbb{R}$$).  
+- Pokud $$a=0 \land b\neq 0$$, rovnice nemá řešení (vyjde $$b = 0  \Rightarrow K = \varnothing$$).
+- Pokud $$a \neq 0$$, rovnice má právě jedno řešení.
+
+Řešení pro poslední případ:
+
+$$
+ax+b = 0 \\ ax = -b \\ x = -\frac{b}{a}
+$$
+
+$$
+K = \{-\frac{b}{a}\}
+$$
+
+# Kvadratické rovnice s jednou neznámou
+
+Obecný tvar: $$ax^2 + bx + c = 0$$
+
+Řešení přes úpravu na čtverec:
+
+$$
+ax^2 + bx + c = 0 \\ x^2 + \frac{b}{a}x + \frac{c}{a} = 0 \\ (x + \frac{b}{2a})^2 - \frac{b^2 - 4ac}{4a^2} = 0 \\ x + \frac{b}{2a} = \pm \sqrt{\frac{b^2 - 4ac}{4a^2}}
+$$
+
+$$
+ x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+- Tomuto vzorci se říká "kvadratický vzorec" a je to taková ta bruteforce cesta k výsledku.
+- Jeho části $$b^2 - 4ac$$ se říká diskriminant, značíme $$D = b^2 - 4ac$$.
+  - $$D < 0 \Rightarrow K = \varnothing$$ - $$0$$ řešení
+  - $$D = 0 \Rightarrow K = \{-\frac{b}{2a}\}$$ - $$1$$ řešení
+  - $$D > 0 \Rightarrow K = \{x_1; x_2\}$$ - $$2$$ řešení
