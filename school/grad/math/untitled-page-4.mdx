@@ -1,3 +1,47 @@
 ---
 title: "5. Metody řešení soustav lineárních rovnic, matice"
 ---
+
+# Soustava lineárních rovnic
+
+**Definice: Soustava lineárních rovnic je systém více lineárních rovnic o stejných neznámých.**
+
+## Počet řešení soustavy
+
+- Právě $$1$$ řešení
+- Žádné řešení
+- Nekonečně mnoho řešení
+
+# Metody řešení soustav
+
+## Dosazovací metoda
+
+Z jedné rovnice vyjádříme jednu neznámou a dosadíme do ostatních rovnic. Tím si zredukujeme soustavu rovnic o jednu neznámou. Opakujeme, dokaď nemáme jednu rovnici o jedné neznámé.
+
+Př.:
+
+$$
+I. \, x+y+z=6 \\ II. \, 2x-y+z = 3 \\ III. \, x+2y-z = 2
+$$
+
+Řešení:
+
+$$
+I. \, x = 6-y-z \\ II. \,2(6-y-z)-y-z = 3 \\ IV. \, 3y+z = 9 \\ III. \, (6-y-z) + 2y -z = 2 \\ y-2z = -4 \\ y = 2z - 4 \\ IV. \, 3(2z-4) + z = 9 \\ \Rightarrow z = 3, y = 2, x = 1
+$$
+
+## Sčítací metoda
+
+Rovnice upravíme tak, aby po jejich sečtení alespoň jedna neznámá zmizela. Tím si zredukujeme soustavu rovnic o jednu neznámou. Opakujeme, dokaď nemáme jednu rovnici o jedné neznámé.
+
+Př.:
+
+$$
+I. \, x+y+z=6 \\ II. \, 2x-y+z = 3 \\ III. \, x+2y-z = 2
+$$
+
+Řešení:
+
+$$
+I. + II. : 3x + 2z = 9 \\ 2\cdot I. - III. : x + 3z = 10 \\ (I. + II.) - 3(2\cdot I - III.): -7z = -21 \\ \Rightarrow z = 3, x = 1, y = 2
+$$
