@@ -20,7 +20,11 @@ $$
 
 <u>Trojúhelníková nerovnost</u>: $$a+b>c$$ pro jakoukoliv permutaci stran, jinak trojúhelník nemůže vzniknout.
 
-![Ilustrace Trojuhelnik Znaceni](/images/ilustrace-trojuhelnik-znaceni.png "Ilustrace Trojuhelnik Znaceni")
+<img
+  src="/images/ilustrace-trojuhelnik-znaceni.png"
+  alt="Ilustrace Trojuhelnik Znaceni"
+  title="Ilustrace Trojuhelnik Znaceni"
+/>
 
 Rozdělení trojúhelníků podle stran:
 
@@ -94,3 +98,82 @@ v_c^2 = c_a \cdot c_b
 $$
 
 # Čtyřúhelník
+
+**Definice: Nechť** $$A,B,C,D$$ **jsou čtyři body v téže rovině, z nichž žádné tři neleží v přímce. Čtyřúhelníkem** $$ABCD$$ **nazýváme sjednocení jednoduché uzavřené lomené čáry se čtyřmi vrcholy** $$A,B,C,D$$ **a její vnitřní oblasti.**
+
+<u>Vrcholy čtyřúhelníku</u>: Body $$A,B,C,D$$.
+
+<u>Strany čtyřúhelníku</u>: Úsečky $$AB, BC, CD, DA$$.
+
+$$
+\vert AB \vert = a, \vert BC \vert = b, \vert CD \vert = c, \vert DA \vert = d
+$$
+
+<u>Vnitřní úhly čtyřúhelníku</u>: Úhly $$\angle ABC, \angle BCD, \angle CDA, \angle DAB$$. 
+
+$$
+\vert \angle ABC \vert = \beta, \vert \angle BCD \vert = \gamma, \vert \angle CDA \vert = \delta, \vert \angle DAB \vert = \alpha
+$$
+
+<u>Součet vnitřních úhlů čtyřúhelníku</u>: $$\alpha + \beta + \gamma + \delta = 360^\circ$$
+
+## Tětivový a tečnový čtyřúhelník
+
+<u>Tětivový čtyřúhelník</u>: Je čtyřúhelník, kterému lze opsat kružnici.
+
+- Čtyřúhelník je tětivový $$\Leftrightarrow \alpha + \gamma = \beta + \delta = 180^\circ$$.
+- Spousta dalších useful věcí.
+
+<u>Tečnový čtyřúhelník</u>: Je čtyřúhelník, kterému lze vepsat kružnici.
+
+- Čtyřúhelník je tečnový $$\Leftrightarrow a + c = b + d$$
+
+<u>Dvojstředový čtyřúhelník</u>: Je čtyřúhelník, který je tětivový a tečnový zároveň.
+
+## Základní druhy čtyřúhelníků
+
+<u>Čtverec</u>: Je čtyřúhelník, který má všechny strany stejně dlouhé a všechny úhly jsou pravé (mají $$90^\circ$$).
+
+- $$o = 4a, S = a^2$$, kde $$a$$ je délka strany čtverce.
+- Protilehlé strany jsou rovnoběžné.
+- Protilehlé úhly jsou stejně velké.
+- Úhlopříčky $$e,f$$ jsou na sebe kolmé a vzájemně se půlí.
+- Je dvojstředový.
+
+<u>Obdélník</u>: Je čtyřúhelník, který má všechny úhly pravé (mají $$90^\circ$$).
+
+- $$o = 2(a+b), S = ab$$, kde $$a,b$$ jsou délky stran obdélníku.
+- Protilehlé strany jsou rovnoběžné.
+- Protilehlé úhly jsou stejně velké.
+- Úhlopříčky $$e,f$$ jsou na sebe kolmé a vzájemně se půlí.
+- Je dvojstředový.
+
+<u>Kosočtverec</u>: Je čtyřúhelník, který má všechny strany stejně dlouhé.
+
+- Protilehlé strany jsou rovnoběžné.
+- Protilehlé úhly jsou stejně velké.
+- Úhlopříčky $$e,f$$ jsou na sebe kolmé a vzájemně se půlí.
+- $$o = 4a, S = a \cdot v_a = \frac{e\cdot f}{2} = a^2\sin{\alpha}$$
+- Je tečnový.
+
+<u>Rovnoběžník</u>: Je čtyřúhelník, který má dvojice protějších stran rovnoběžné.
+
+- Protilehlé úhly jsou stejně velké.
+- Úhlopříčky $$e,f$$ se vzájemně půlí.
+- $$o = 2(a+b), S = a \cdot v_a = b \cdot v_b$$
+
+<u>Lichoběžník</u>: Je čtyřúhelník, který má právě jednu dvojici protějších stran rovnoběžnou.
+
+- Strany, které jsou na sebe rovnoběžné, se nazývají základny. Zbylé jsou ramena.
+- $$S = \frac{a+c}{2} \cdot v$$, kde $$a,c$$ jsou délky jeho základen.
+- "Věta o motýlích křídlech".
+- Rovnoramenný lichoběžník: $$b=d$$.
+  - Je tětivový.
+- Pravoúhlý lichoběžník: Jedno rameno je kolmé k základnám.
+
+<u>Deltoid</u>: Je čtyřúhelník, který má dvě dvojice shodných sousedních stran.
+
+- Je osově souměrný podle jedné z úhlopříček.
+- Úhlopříčky $$e,f$$ jsou na sebe kolmé.
+- $$ S = \frac{e\cdot f}{2} = ab \sin{\theta}$$, kde $$a,b$$ jsou délky různých stran a $$\theta$$ je úhel, který svírají. 
+- Je tečnový.
