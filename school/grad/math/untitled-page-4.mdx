@@ -8,9 +8,9 @@ title: "5. Metody řešení soustav lineárních rovnic, matice"
 
 ## Počet řešení soustavy
 
-- Právě $$1$$ řešení
-- Žádné řešení - pokud vyjde blbost
-- Nekonečně mnoho řešení - pokud vyjde $$0 = 0$$
+- Právě $$1$$ řešení - soustava je určitá
+- Žádné řešení - pokud vyjde blbost, soustava je neslučitelná
+- Nekonečně mnoho řešení - pokud vyjde $$0 = 0$$, soustava je neurčitá
 
 # Metody řešení soustav
 
@@ -47,3 +47,125 @@ I. + II. : 3x + 2z = 9 \\ 2\cdot I. - III. : x + 3z = 10 \\ (I. + II.) - 3(2\cdo
 $$
 
 - Tyto dvě metody samozřejmě můžeme libovolně kombinovat podle toho, co se nám zrovna víc hodí.
+
+## Grafická metoda
+
+Především pro rovnice o 2 neznámých, převedeme na fce $$y = f(x)$$ a najdeme jejich průnik na rovině.
+
+## Gaussova eliminační metoda
+
+Soustavu zapíšeme jako matici a převedeme ekvivalentními úpravami na horní trojúhelníkovou matici/jednotkovou matici a z toho nám vyjdou neznámé.
+
+Př.:
+
+$$
+I. \, x+y+z=6 \\ II. \, 2x-y+z = 3 \\ III. \, x+2y-z = 2
+$$
+
+Řešení: 
+
+$$
+\left( \begin{array}{ccc|c} 1&1&1&6\\ 2&-1&1&3\\ 1&2&-1&2 \end{array} \right) \sim \left( \begin{array}{ccc|c} 1&1&1&6\\ 0&-3&-1&-9\\ 0&1&-2&-4 \end{array} \right) \sim \left( \begin{array}{ccc|c} 1&1&1&6\\ 0&1&-2&-4  \\ 0&0&-7&-21\end{array} \right) \\ \sim \left( \begin{array}{ccc|c} 1&0&0&1\\ 0&1&0&2  \\ 0&0&1&3\end{array} \right) \Rightarrow x = 1, y = 2, z = 3
+$$
+
+# Matice
+
+**Definice: Matice je obdélníkové schéma čísel nebo jiných objektů nazývaných "prvky matice".**
+
+<u>Rozměr</u>: Je dán počtem řádků a sloupců, které matice obsahuje. Matice rozměru $$m \times n$$ má $$m$$ řádků a $$n$$ sloupců.
+
+<u>Značení</u>: $$A= \begin{pmatrix} 1&2&3\\ 4&5&6 \end{pmatrix}$$, matici značíme velkým písmene, prvek na řádku $$i$$ a sloupci $$j$$ značíme $$a_{i,j}$$.
+
+## Druhy matic
+
+- Řádková matice: $$m = 1, A =  \begin{pmatrix} 1&2&3\end{pmatrix}$$
+- Sloupcová matice: $$n = 1, A =  \begin{pmatrix} 1\\2\\3\end{pmatrix}$$
+  - Tyto dvě matice taky mohou reprezentovat vektory (jsou to vektory).
+- Čtvercová matice: $$m = n, A = \begin{pmatrix}1&2 \\ 3 & 4 \end{pmatrix}$$
+- Nulová matice: $$\forall i,j : a_{i,j} = 0, A = \begin{pmatrix}0&0 \\ 0 &0 \end{pmatrix}$$
+- Jednotková matice: Čtvercová matice, která má na hlavní diagonále $$1$$ a všude jinde $$0$$, značíme: $$I = \begin{pmatrix} 1&0&0\\ 0&1&0 \\ 0&0&1\end{pmatrix}$$
+
+## Operace s maticemi
+
+<u>Sčítání matic</u>: Můžeme sčítat pouze matice stejného rozměru. Výsledkem je matice stejného rozměru:
+
+$$
+A+B = C;c_{i,j} = a_{i,j} + b_{i,j}
+$$
+
+<u>Násobení matic reálným číslem</u>: Výsledkem je matice stejného rozměru.
+
+$$
+A \cdot k = B;  b_{i,j} = a_{i,j} \cdot k
+$$
+
+<u>Odečítání matic</u>: Výsledkem je matice stejného rozměru: $$A - B = A + (-1) \cdot B$$
+
+<u>Transpozice</u>: Výsledkem je matice rozměru $$n \times m$$ $$A^T = B;b_{i,j} = a_{j,i}$$
+
+<u>Násobení matic</u>: Můžeme násobit pouze matice, pokud splňují rozměry $$m \times n$$ a $$n \times p$$, druhá matice prostě musí mít stejný počet řádků jako ta první sloupců. Výsledkem je matice $$m \times p$$:
+
+$$
+AB = C; c_{i,j} = \sum_{k = 1}^{n}a_{ik} \cdot b_{kj}
+$$
+
+- Součin nemusí být komutativní!!!
+
+## Determinant
+
+Determinant je číslo přiřazené čtvercové matici.
+
+<u>Značení</u>: $$\text{det}(A), \begin{vmatrix} \text{zde prvky matice}\end{vmatrix}$$
+
+<u>1x1 matice</u>: $$A = \begin{pmatrix} a_{1,1} \end{pmatrix}, \text{det}(A) = \begin{vmatrix} a_{1,1} \end{vmatrix} = a_{1,1}$$
+
+<u>2x2 matice</u>: 
+
+$$
+A = \begin{pmatrix} a_{1,1} & a_{1,2} \\ a_{2,1} & a_{2,2}\end{pmatrix} \\ \text{det}(A) = \begin{vmatrix} a_{1,1} & a_{1,2} \\ a_{2,1} & a_{2,2} \end{vmatrix} = a_{1,1} \cdot a_{2,2} - a_{2,1} \cdot a_{1,2}
+$$
+
+<u>3x3 matice</u>: Sarrusovo pravidlo
+
+![Image](/images/image-9.png "Image")
+
+$$\text{det}(A) = a_{1,1}a_{2,2}a_{3,3} + a_{2,1}a_{3,2}a_{1,3} + a_{3,1}a_{1,2}a_{2,3} - a_{1,3}a_{2,2}a_{3,1} - a_{2,3}a_{3,2}a_{1,1} - a_{3,3}a_{1,2}a_{2,1} $$
+
+<u>Vyšší stupně</u>: Rozvoj
+
+$$
+\text{det}(A) = \sum_{i=1}^{n}(-1)^{i+k}a_{i,k}A_{i,k}; 1 \leq k \leq m \land k \in \mathbb{N}
+$$
+
+- Matice $$A_{i,k}$$ je matice, která vznikne vynecháním $$i$$tého řádku a $$k$$tého sloupce z matice.
+- Tento postup můžeme použít i s prohozením $$i,k$$, pokud splníme $$1 \leq k \leq n $$ a v sumě nahradíme $$n$$ písmenem $$m$$.
+
+$$\Rightarrow$$ Pokud má matice nulový sloupec nebo nulový řádek, její determinant je roven $$0$$.
+
+Pokud má matice nenulový determinant, má její soustava $$n$$ rovnic o $$n$$ neznámých právě jedno řešení. Jinak má buď žádné nebo nekonečně mnoho řešení.
+
+## Inverzní matice k čtvercové matici
+
+Inverzní matice existuje $$\Leftrightarrow \text{det}(A) \neq 0$$.
+
+<u>Značení</u>: $$A^{-1}$$
+
+<u>Pro inverzní matici platí</u>: $$AA^{-1} = A^{-1}A = I$$
+
+<u>Výpočet</u>: $$( \, A \,  \vert \,  I\, ) \sim ... \sim (\, I \, \vert \, A^{-1} \,)$$
+
+Pomocí inverzních matic můžeme řešit maticové rovnice, např. 
+
+$$
+AX = B \\ X = A^{-1} B
+$$
+
+## Cramerovo pravidlo
+
+Pro soustavu $$n$$ rovnic o $$n$$ neznámých, jejíž determinant je nenulový (má právě jedno řešení) ho můžeme využít k jednoduchému nalezení neznámých.
+
+$$
+x_i = \frac{D_i}{D}
+$$
+
+Matice $$D_i$$ vznikne nahrazením $$i$$tého sloupce sloupcem hodnot pravých stran.
