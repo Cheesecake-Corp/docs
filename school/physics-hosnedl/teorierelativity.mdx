@@ -133,6 +133,14 @@ Pro malé rychlosti: Nové vztahy → Galil.
   S’ je vesmírný vagón
 </Frame>
 
+Kulová plocha:
+
+$$
+x^2 + y^2 + z^2 = (c\cdot t)^2 \\ x'^2 + y'^2 + z'^2 = (c\cdot t')^2
+$$
+
+- po dosazení z těch nahoře vyjde člen navíc a nevychází to, tak přišel Lorentz
+
 Lorentzovy transformace:
 
 ![Image](/images/image-7.png "Image")
@@ -164,3 +172,78 @@ $$
 $$
 x = \frac{x'+vt'}{\sqrt{1-\frac{v^2}{c^2}}},\, x' = \frac{x-vt}{\sqrt{1-\frac{v^2}{c^2}}}
 $$
+
+## Nějaký odvozování
+
+$$
+x = \frac{x' + vt'}{\sqrt{1-\frac{v^2}{c^2}}}
+$$
+
+$$
+\frac{x}{c} = \frac{\frac{x'}{c} + \frac{vt'}{c}}{\sqrt{1-\frac{v^2}{c^2}}}
+$$
+
+$$
+t = \frac{t' + \frac{v}{c}t'}{\sqrt{1-\frac{v^2}{c^2}}}
+$$
+
+$$
+t = \frac{t' + \frac{v}{c^2}x'}{\sqrt{1-\frac{v^2}{c^2}}}
+$$
+
+$$
+\lim_{v \to 0} t = t'
+$$
+
+Analogicky:
+
+$$
+t' = \frac{t - \frac{v}{c^2}x}{\sqrt{1-\frac{v^2}{c^2}}}
+$$
+
+<Card title="Lorenztovy transformace" icon="arrows-alt-h">
+  <Columns cols={2}>
+    <Column>
+      $$
+      S'\to S
+      $$
+
+      $$
+      x = \frac{x'+vt'}{\sqrt{1-\frac{v^2}{c^2}}}
+      $$
+
+      $$
+      y = y'
+      $$
+
+      $$
+      z = z'
+      $$
+
+      $$
+      t = \frac{t' + \frac{v}{c^2}x'}{\sqrt{1-\frac{v^2}{c^2}}}
+      $$
+    </Column>
+    <Column>
+      $$
+      S \to S'
+      $$
+
+      $$
+      x' = \frac{x-vt}{\sqrt{1-\frac{v^2}{c^2}}}
+      $$
+
+      $$
+      y' = y
+      $$
+
+      $$
+      z' = z
+      $$
+
+      $$
+      t' = \frac{t-\frac{v}{c^2}\cdot x}{\sqrt{1-\frac{v^2}{c^2}}}
+      $$
+    </Column>
+  </Columns>
+</Card>
