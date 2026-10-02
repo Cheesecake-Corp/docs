@@ -65,8 +65,14 @@
             "school/physics/light/optical_enviromment",
             "school/physics/light/zakon-odrazu-a-zakon-lomu",
             "school/physics/light/uplny-odraz",
-            "school/physics/light/disperze-svetla",
-            "school/physics/light/optika"
+            "school/physics/light/disperze-svetla"
+          ]
+        },
+        {
+          "group": "Optika",
+          "pages": [
+            "school/physics/light/optika",
+            "paprskova-optika"
           ]
         }
       ]
