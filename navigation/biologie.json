@@ -85,6 +85,13 @@
       "pages": [
         "school/biologie/history/dejiny"
       ]
+    },
+    {
+      "dropdown": "Život na Zemi",
+      "pages": [
+        "school/biologie/history/vznik-a-vyvoj-zivota-na-zemi",
+        "school/biologie/history/vyvoj-evolucnich-teorii"
+      ]
     }
   ]
 }
