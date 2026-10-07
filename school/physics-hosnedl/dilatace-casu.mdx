@@ -7,7 +7,11 @@ title: "Dilatace času"
 - důsledek $$c=\text{konst.}$$
 
 <Frame>
-  ![Dilatace Casu](/images/dilatace-casu.png "Dilatace Casu")
+  <img
+    src="/images/dilatace-casu.png"
+    alt="Dilatace Casu"
+    title="Dilatace Casu"
+  />
 </Frame>
 
 - potřebujeme přesné hodiny → **ATOMOVÉ HODINY**
@@ -29,7 +33,7 @@ title: "Dilatace času"
   Dáme po vagón synchronizované hodiny, a vezmeme z nich čas, kdy je vagón míjí
 </Frame>
 
-$$\Delta t' =t_2'-t_1' = \Delta t_0$$ - vlastní čas trvání děje
+$$\Delta t' =t_2'-t_1' = \Delta t_0$$ - vlastní čas trvání děje - změří pozorovatel vůči němuž jsou hodiny v klidu, nejmenší čas, co můžeme naměřit
 
 $$
 \Delta t = t_2 - t_1 = \frac{t_2' + \frac{v}{c^2} \cdot x'}{\sqrt{1 - \frac{v^2}{c^2}}} - \frac{t_1' + \frac{v}{c^2} \cdot x'}{\sqrt{1 - \frac{v^2}{c^2}}} = \frac{t_2' - t_1'}{\sqrt{1 - \frac{v^2}{c^2}}}
@@ -78,3 +82,38 @@ $$
   \Delta t = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}}
   $$
 </Accordion>
+
+## Oveření
+
+### Ověření 1 - 1971 USA:
+
+<Frame>
+  ![Dilatacecasuovereni1](/images/dilatacecasuovereni1.png "Dilatacecasuovereni1")
+</Frame>
+
+Zpoždění hodin: $$203 \, \text{ns} \pm 10 \, \text{ns}$$
+
+$$
+\Delta t_0=\frac{s}{v}=\frac{2\pi \cdot 6378 \cdot 10^3}{300}\doteq133\,580\,\text{s}
+$$
+
+$$
+\Delta t = \frac{\Delta t_0}{\sqrt{1-\frac{v^2}{c^2}}}
+$$
+
+$$
+\Delta t = \frac{133580}{\sqrt{1-\frac{300^2}{(3\cdot 10^8)^2}}}\doteq 133580{,}000000667 \, \text{s} \\ \Delta t_{tenconászajímá} = 667 \, \text{ns}
+$$
+
+### Ověření 2:
+
+Máme mezon $$\pi^+$$
+
+$$m = 273 \, \text{m}_{\text{e}^-}$$
+
+- je nestabilní
+- $$\tau _0 = 2{,}5 \cdot 10^{-8} \text{s}$$ 
+- $$v = 0{,}99 c$$ 
+- $$l = v \cdot \tau _0 = 2{,}5 \cdot 10^{-8}\cdot 0,99 \cdot 3 \cdot 10^8$$
+- $$l = 7{,}4 \, \text{m}$$ 
+- $$\Delta t = \frac{2,5 \cdot 10^{-8}}{\sqrt{1-\frac{0{,}99^2c^2}{c^2}}}=17{,}7\cdot 10^{-8} \, \text{s}$$
