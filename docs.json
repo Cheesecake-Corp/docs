@@ -21,11 +21,17 @@
         "pages": [
           "school/physics-hosnedl/stranka",
           "school/physics-hosnedl/vedeckateorie",
-          "school/physics-hosnedl/teorierelativity",
-          "school/physics-hosnedl/relativnost-soucasnosti",
-          "school/physics-hosnedl/dilatace-casu",
-          "school/physics-hosnedl/kontrakce-delek",
-          "school/physics-hosnedl/skladani-rychlosti-v-terorii-relativity"
+          {
+            "group": "Teorie relativity",
+            "pages": [
+              "school/physics-hosnedl/teorierelativity",
+              "school/physics-hosnedl/relativnost-soucasnosti",
+              "school/physics-hosnedl/dilatace-casu",
+              "school/physics-hosnedl/kontrakce-delek",
+              "school/physics-hosnedl/skladani-rychlosti-v-terorii-relativity",
+              "school/physics-hosnedl/relativisticka-dynamika"
+            ]
+          }
         ]
       }
     ]
