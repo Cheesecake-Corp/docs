@@ -45,7 +45,9 @@
       "dropdown": "Čeština",
       "pages": [
         "school/grad/czech/lakomec",
-        "school/grad/czech/krysar"
+        "school/grad/czech/krysar",
+        "promena",
+        "r-u-r"
       ],
       "icon": "book",
       "color": {
