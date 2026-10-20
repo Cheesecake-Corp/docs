@@ -72,5 +72,12 @@
   },
   "metadata": {
     "timestamp": true
+  },
+  "contextual": {
+    "options": [
+      "download-pdf",
+      "view"
+    ],
+    "display": "header"
   }
 }
