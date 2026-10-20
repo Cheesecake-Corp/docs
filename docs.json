@@ -52,7 +52,7 @@
     }
   },
   "fonts": {
-    "family": "Google Sans"
+    "family": "Ubuntu Mono"
   },
   "styling": {
     "latex": true
