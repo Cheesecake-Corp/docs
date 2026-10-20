@@ -56,7 +56,8 @@
     "family": "JetBrains Mono"
   },
   "styling": {
-    "latex": true
+    "latex": true,
+    "eyebrows": "breadcrumbs"
   },
   "favicon": {
     "light": "/images/cake.svg",
@@ -68,5 +69,8 @@
   },
   "icons": {
     "library": "fontawesome"
+  },
+  "metadata": {
+    "timestamp": true
   }
 }
