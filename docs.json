@@ -50,7 +50,7 @@
       "light": "#f9d9a4",
       "dark": "#121212"
     },
-    "decoration": "windows"
+    "decoration": "grid"
   },
   "fonts": {
     "family": "JetBrains Mono"
