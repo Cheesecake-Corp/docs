@@ -50,7 +50,7 @@
       "light": "#f9d9a4",
       "dark": "#121212"
     },
-    "decoration": "grid"
+    "decoration": "gradient"
   },
   "fonts": {
     "family": "JetBrains Mono"
@@ -65,5 +65,8 @@
   "logo": {
     "light": "/images/cake.svg",
     "dark": "/images/cake.svg"
+  },
+  "icons": {
+    "library": "fontawesome"
   }
 }
