@@ -53,7 +53,7 @@
     "decoration": "grid"
   },
   "fonts": {
-    "family": "Zilla Slab"
+    "family": "JetBrains Mono"
   },
   "styling": {
     "latex": true,
