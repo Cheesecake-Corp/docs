@@ -91,7 +91,16 @@
       "pages": [
         "school/biologie/history/vznik-a-vyvoj-zivota-na-zemi",
         "school/biologie/history/vyvoj-evolucnich-teorii",
-        "school/biologie/history/vyvojove-ery-zeme"
+        {
+          "group": "Vývojové éry Země",
+          "pages": [
+            "school/biologie/history/vyvojove-ery-zeme",
+            "school/biologie/history/prahory",
+            "school/biologie/history/prvohory",
+            "school/biologie/history/druhohory",
+            "school/biologie/history/tretihory"
+          ]
+        }
       ]
     }
   ]
