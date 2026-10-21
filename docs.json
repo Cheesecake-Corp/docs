@@ -75,9 +75,9 @@
   },
   "contextual": {
     "options": [
-      "download-pdf",
-      "view"
+      "view",
+      "chatgpt"
     ],
-    "display": "toc"
+    "display": "header"
   }
 }
