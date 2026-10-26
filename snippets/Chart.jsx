@@ -9,8 +9,8 @@ const data = [
 
 export const MyChart = () => {
   return (
-    <div style={{ width: '100%', height: 300 }}>
-      <ResponsiveContainer width="100%" height="100%">
+    <div style={{ width: 200, height: 300 }}>
+      <ResponsiveContainer width="200" height="300">
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
