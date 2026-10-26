@@ -1,3 +1,4 @@
+@import "mafs/core.css";
 @media print {
   /* Skryje navigační lišty, boční panely, zápatí a reklamy */
   nav, sidebar, footer, .ads, .no-print, #navbar, .my-8, .feedback-toolbar {
