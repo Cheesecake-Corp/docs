@@ -31,6 +31,12 @@
               "school/physics-hosnedl/skladani-rychlosti-v-terorii-relativity",
               "school/physics-hosnedl/relativisticka-dynamika"
             ]
+          },
+          {
+            "group": "Kvantová mechanika",
+            "pages": [
+              "school/physics-hosnedl/kvantova-mechanika"
+            ]
           }
         ]
       }
