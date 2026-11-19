@@ -108,10 +108,10 @@
     {
       "dropdown": "Random organismy různý ig nějakej vývoj",
       "pages": [
-        "uvod-k-virum",
-        "prokaryota",
-        "bakterialni-onemocneni",
-        "silnice"
+        "school/biologie/organisms/uvod-k-virum",
+        "school/biologie/organisms/prokaryota",
+        "school/biologie/organisms/bakterialni-onemocneni",
+        "school/biologie/organisms/silnice"
       ]
     }
   ]
